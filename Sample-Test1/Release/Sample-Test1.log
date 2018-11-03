@@ -1,0 +1,5 @@
+﻿  test.cpp
+c:\users\aya\documents\visual studio 2017\projects\blackjack2-master\blackjack2-master\sample-test1\test.cpp(6): error C3875: call of non-static member function missing argument list
+c:\users\aya\documents\visual studio 2017\projects\blackjack2-master\blackjack2-master\sample-test1\test.cpp(6): error C3867: '_Player::getPlayerMoney': non-standard syntax; use '&' to create a pointer to member
+c:\users\aya\documents\visual studio 2017\projects\blackjack2-master\blackjack2-master\sample-test1\test.cpp(6): error C2512: 'testing::AssertionResult': no appropriate default constructor available
+  c:\users\aya\documents\visual studio 2017\projects\blackjack2-master\blackjack2-master\packages\microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.0\build\native\include\gtest\gtest.h(256): note: see declaration of 'testing::AssertionResult'
