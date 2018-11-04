@@ -1,5 +1,6 @@
 #pragma once
 #include "Player.h"
+#include "Dealer.h"
 #include "Deck.h"
 #include <vector>
 
@@ -10,7 +11,7 @@ ref class Blackjackgame
 public:
 	int totalBetAmount;
 	Player^ player;
-	Player^ dealer;
+	Dealer^ dealer;
 	Deck^ d;
 
 // methods

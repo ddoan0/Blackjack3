@@ -1,5 +1,12 @@
 #include "Player.h"
 
+Player::Player()
+{
+	money = 0;
+	numOfAces = 0;
+	totalCardValue = 0;
+}
+
 Player::Player(int startingMoney)
 {
 	money = startingMoney;

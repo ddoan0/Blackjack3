@@ -1,13 +1,13 @@
 #pragma once
 ref class Player
 {
-private:
+protected:
 	int money;
 	int numOfAces;
 	int totalCardValue;
-	int cardPos1, cardPos2;
 
 public:
+	Player();
 	Player(int);
 	void Bet(int wager);
 	void resetPlayer(int);

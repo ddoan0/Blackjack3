@@ -4,7 +4,7 @@
 Blackjackgame::Blackjackgame()
 {
 	player = gcnew Player(1000);
-	dealer = gcnew Player(0);
+	dealer = gcnew Dealer();
 	d = gcnew Deck();
 	totalBetAmount = 0;
 }

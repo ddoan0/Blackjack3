@@ -136,23 +136,27 @@
   <ItemGroup>
     <ClCompile Include="Blackjackgame.cpp" />
     <ClCompile Include="Card.cpp" />
+    <ClCompile Include="Dealer.cpp" />
     <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Blackjack.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="_Blackjackgame.cpp" />
     <ClCompile Include="_Card.cpp" />
+    <ClCompile Include="_Dealer.cpp" />
     <ClCompile Include="_Deck.cpp" />
     <ClCompile Include="_Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Blackjackgame.h" />
     <ClInclude Include="Card.h" />
+    <ClInclude Include="Dealer.h" />
     <ClInclude Include="Deck.h" />
     <ClInclude Include="Blackjack.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="_Blackjackgame.h" />
     <ClInclude Include="_Card.h" />
+    <ClInclude Include="_Dealer.h" />
     <ClInclude Include="_Deck.h" />
     <ClInclude Include="_Player.h" />
     <ClInclude Include="Player.h" />

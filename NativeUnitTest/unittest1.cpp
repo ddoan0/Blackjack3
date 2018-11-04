@@ -4,6 +4,7 @@
 #include "../Project1/_Deck.cpp"
 #include "../Project1/_Player.cpp"
 #include "../Project1/_Blackjackgame.cpp"
+#include "../Project1/_Dealer.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -39,7 +40,28 @@ namespace NativeUnitTest
 			Assert::AreEqual(0, p1.getNumOfAces());
 		}
 	};
-
+	TEST_CLASS(DealerTest)
+	{
+		TEST_METHOD(DealerInit)
+		{
+			_Dealer theDealer;
+			Assert::AreEqual(0, theDealer.getPlayerMoney());
+		}
+		TEST_METHOD(DealerReceiveBet)
+		{
+			_Dealer theDealer;
+			theDealer.Bet(100);
+			Assert::AreEqual(100, theDealer.getPlayerMoney());
+		}
+		TEST_METHOD(ResetDealer)
+		{
+			_Dealer theDealer;
+			theDealer.setPlayerMoney(100);
+			Assert::AreNotEqual(0, theDealer.getPlayerMoney());
+			theDealer.resetPlayer();
+			Assert::AreEqual(0, theDealer.getPlayerMoney());
+		}
+	};
 	TEST_CLASS(CardTest)
 	{
 	public:
