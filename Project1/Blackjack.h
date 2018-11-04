@@ -284,7 +284,8 @@ namespace Project1 {
 			this->helpToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::helpToolStripMenuItem_Click);
 			// 
 			// button2
-			// 
+			//
+			this->button2->Enabled = false;
 			this->button2->Location = System::Drawing::Point(93, 38);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
@@ -295,6 +296,7 @@ namespace Project1 {
 			// 
 			// button3
 			// 
+			this->button3->Enabled = false;
 			this->button3->Location = System::Drawing::Point(93, 67);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
@@ -323,6 +325,7 @@ namespace Project1 {
 			// 
 			// button4
 			// 
+			this->button4->Enabled = false;
 			this->button4->Location = System::Drawing::Point(12, 38);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 23);
@@ -444,8 +447,10 @@ namespace Project1 {
 		bjg->set_bet_amount(temp); // use that number to subtract from the player's amount and add to the pot
 		label2->Text = bjg->dealer->getPlayerMoney().ToString(); // display the total
 		label4->Text = bjg->player->getPlayerMoney().ToString();
-
-		
+		button1->Enabled = false;
+		button2->Enabled = false;
+		button3->Enabled = false;
+		button4->Enabled = true;		
 	} // bet button
 	
 
@@ -499,7 +504,10 @@ private: System::Void button4_Click(System::Object^  sender, System::EventArgs^ 
 	{
 		label10->Text = "Hit or Stay?";
 	}
-
+	button1->Enabled = false;
+	button2->Enabled = true;
+	button3->Enabled = true;
+	button4->Enabled = false;
 } // START ROUND BUTTON
 
  // HIT BUTTON
@@ -557,7 +565,10 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 	label10->Text = bjg->winnerIsDetermined(&y, &x);
 	label4->Text = bjg->player->getPlayerMoney().ToString();
 	label2->Text = bjg->dealer->getPlayerMoney().ToString();
-	
+	button1->Enabled = true;
+	button2->Enabled = false;
+	button3->Enabled = false;
+	button4->Enabled = false;
 }// STAY BUTTON
 
 

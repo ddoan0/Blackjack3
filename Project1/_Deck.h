@@ -1,3 +1,4 @@
+#pragma once
 #include "_Card.h"
 #include <vector>
 class _Deck

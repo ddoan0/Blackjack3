@@ -11,7 +11,7 @@ _Blackjackgame::_Blackjackgame()
 
 int _Blackjackgame::getTotalBetAmount()
 {
-	return totalBetAmount;
+	return dealer->getPlayerMoney();
 }
 
 void _Blackjackgame::set_bet_amount(int betAmount)

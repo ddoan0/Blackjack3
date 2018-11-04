@@ -59,8 +59,8 @@ void _Deck::populate()
 		// aCardValue to be only used for Aces
 		deck[i]->aCardValue = 11;
 		deck[i]->cardValue = j++;
-
-		deck[i]->img_loc = "images\\" + cardName.ToString + ".png";
+		std::string cardNameString = "images\\" + std::to_string(cardName) + ".png";
+		deck[i]->img_loc = cardNameString;
 		cardName++;
 
 		if (j >= 10) // when j = 10, let the value persist until all face cards are accounted for
